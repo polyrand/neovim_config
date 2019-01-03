@@ -26,6 +26,8 @@ augroup vimrc
     autocmd BufWritePre /tmp/* setlocal noundofile
 augroup END
 
+au BufRead,BufNewFile *.md setlocal textwidth=80
+
 " nmap <S-Enter> o<Esc>
 
 let python_highlight_all=1
