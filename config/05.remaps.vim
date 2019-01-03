@@ -21,6 +21,7 @@ nnoremap <leader>o :bprevious<CR>
 
 
 " FZF remaps
+nnoremap <C-p> :FZF<CR>
 " fzf files with , t
 nnoremap <leader>t :Files<CR>
 " rg code with , f

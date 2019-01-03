@@ -16,6 +16,15 @@ set gdefault
 set cursorline
 set cc=80
 
+" undo
+set undofile
+set undodir=~/.nvim/undo
+
+augroup vimrc
+    autocmd!
+    autocmd BufWritePre ~/.ssh/* setlocal noundofile
+    autocmd BufWritePre /tmp/* setlocal noundofile
+augroup END
 
 " nmap <S-Enter> o<Esc>
 
