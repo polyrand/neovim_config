@@ -11,6 +11,8 @@ Plug 'tmhedberg/simpylfold'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
+" Git integration
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'  " comment-out by gc
 
 Plug 'sheerun/vim-polyglot'
