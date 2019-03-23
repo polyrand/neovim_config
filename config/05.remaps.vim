@@ -39,3 +39,14 @@ noremap <F3> :Autoformat<CR>
 
 " use ` + s to grep code
 " nnoremap <leader>s :FlyGrep<cr>
+"
+" snippets
+" " Press enter key to trigger snippet expansion
+" The parameters are the same as `:help feedkeys()`
+inoremap <silent> <expr> <CR> ncm2_ultisnips#expand_or("\<CR>", 'n')
+
+" c-j c-k for moving in snippet
+" let g:UltiSnipsExpandTrigger		= "<Plug>(ultisnips_expand)"
+let g:UltiSnipsJumpForwardTrigger	= "<c-n>"
+let g:UltiSnipsJumpBackwardTrigger	= "<c-b>"
+let g:UltiSnipsRemoveSelectModeMappings = 0

@@ -21,6 +21,12 @@ Plug 'davidhalter/jedi-vim'
 
 Plug 'Yggdroot/indentLine'
 
+" snippets
+Plug 'SirVer/ultisnips'
+Plug 'ncm2/ncm2-ultisnips'
+Plug 'honza/vim-snippets'
+
+
 " Autocompletion
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
@@ -35,6 +41,15 @@ Plug 'vim-airline/vim-airline-themes'
 
 " Formater
 Plug 'Chiel92/vim-autoformat'
+
+" markdown
+Plug 'plasticboy/vim-markdown'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
+" tabular plugin is used to format tables
+Plug 'godlygeek/tabular'
+" JSON front matter highlight plugin
+Plug 'elzr/vim-json'
 
 " Plug 'wsdjeg/FlyGrep.vim' " grep with <leader>s
 " Plug 'autozimu/LanguageClient-neovim', {
