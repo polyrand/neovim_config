@@ -21,16 +21,13 @@ nnoremap <leader>o :bprevious<CR>
 
 
 " FZF remaps
-nnoremap <C-p> :FZF<CR>
+" nnoremap <C-p> :FZF<CR>
 " fzf files with , t
 nnoremap <leader>t :Files<CR>
 " rg code with , f
 nnoremap <leader>f :Rg<CR>
 
 " NCM2 remaps
-" Use <TAB> to select the popup menu:
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " vim-autoformat
 noremap <F3> :Autoformat<CR>
@@ -46,7 +43,7 @@ noremap <F3> :Autoformat<CR>
 inoremap <silent> <expr> <CR> ncm2_ultisnips#expand_or("\<CR>", 'n')
 
 " c-j c-k for moving in snippet
-" let g:UltiSnipsExpandTrigger		= "<Plug>(ultisnips_expand)"
+let g:UltiSnipsExpandTrigger		= "<Plug>(ultisnips_expand)"
 let g:UltiSnipsJumpForwardTrigger	= "<c-n>"
-let g:UltiSnipsJumpBackwardTrigger	= "<c-b>"
+let g:UltiSnipsJumpBackwardTrigger	= "<c-p>"
 let g:UltiSnipsRemoveSelectModeMappings = 0
