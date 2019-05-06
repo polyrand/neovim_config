@@ -74,3 +74,7 @@ set clipboard+=unnamedplus
 set background=dark
 colorscheme solarized
 
+" is this even needed?
+set rtp+=/usr/local/opt/fzf
+
+set mouse=a

@@ -51,6 +51,11 @@ Plug 'godlygeek/tabular'
 " JSON front matter highlight plugin
 Plug 'elzr/vim-json'
 
+
+" REPL
+Plug 'Vigemus/iron.nvim'
+
+
 " Plug 'wsdjeg/FlyGrep.vim' " grep with <leader>s
 " Plug 'autozimu/LanguageClient-neovim', {
 "     \ 'branch': 'next',
