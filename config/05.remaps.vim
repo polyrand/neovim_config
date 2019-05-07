@@ -47,3 +47,6 @@ let g:UltiSnipsExpandTrigger		= "<Plug>(ultisnips_expand)"
 let g:UltiSnipsJumpForwardTrigger	= "<c-n>"
 let g:UltiSnipsJumpBackwardTrigger	= "<c-p>"
 let g:UltiSnipsRemoveSelectModeMappings = 0
+
+" usw w!! to write a 'Read-Only' file if you forget to open with sudo
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
