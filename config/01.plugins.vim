@@ -6,6 +6,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tmhedberg/simpylfold'
+Plug 'junegunn/vim-easy-align'
 
 " FZF
 Plug '/usr/local/opt/fzf'
