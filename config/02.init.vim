@@ -64,7 +64,7 @@ set tw=100
 
 set ai " autoindent
 set si " smart indent
-set wrap " wrap lines
+" set wrap " wrap lines
 
 
 set clipboard+=unnamedplus

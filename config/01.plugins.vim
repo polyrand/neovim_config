@@ -22,21 +22,22 @@ Plug 'davidhalter/jedi-vim'
 
 Plug 'Yggdroot/indentLine'
 
-" snippets
-Plug 'SirVer/ultisnips'
-Plug 'ncm2/ncm2-ultisnips'
-Plug 'honza/vim-snippets'
+" " snippets
+" Plug 'SirVer/ultisnips'
+" Plug 'ncm2/ncm2-ultisnips'
+" Plug 'honza/vim-snippets'
 
 
 " Autocompletion
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
-Plug 'ncm2/ncm2-jedi'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'ncm2/ncm2'
+" Plug 'roxma/nvim-yarp'
+" Plug 'ncm2/ncm2-bufword'
+" Plug 'ncm2/ncm2-path'
+" Plug 'ncm2/ncm2-jedi'
 
 Plug 'davidhalter/jedi-vim'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -44,17 +45,14 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'Chiel92/vim-autoformat'
 
 " markdown
-Plug 'plasticboy/vim-markdown'
-Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 " tabular plugin is used to format tables
-Plug 'godlygeek/tabular'
-" JSON front matter highlight plugin
-Plug 'elzr/vim-json'
+" Plug 'godlygeek/tabular'
+" " JSON front matter highlight plugin
+" Plug 'elzr/vim-json'
 
 
 " REPL
-Plug 'Vigemus/iron.nvim'
+" Plug 'Vigemus/iron.nvim'
 
 
 " Plug 'wsdjeg/FlyGrep.vim' " grep with <leader>s

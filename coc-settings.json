@@ -1,0 +1,17 @@
+{"python.formatting.provider": "black",
+    "python.pythonPath":"~/dotfiles/pythonenv",
+    "python.jediEnabled": false,
+  "python.condaPath": "/Users/r/miniconda3/condabin/conda",
+  "suggest.noselect": false,
+  "python.venvFolders" : [".venv","envs",".pyenv",".direnv"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "javascriptreact",
+    "typescript.tsx",
+    "graphql"
+  ]
+}
