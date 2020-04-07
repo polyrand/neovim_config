@@ -35,3 +35,4 @@ nnoremap <leader>f :Rg<CR>
 
 " usw w!! to write a 'Read-Only' file if you forget to open with sudo
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
