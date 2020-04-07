@@ -58,9 +58,9 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 
-" lineabreak; 100 chars 
+" lineabreak; 200 chars 
 set lbr
-set tw=100
+set tw=200
 
 set ai " autoindent
 set si " smart indent
@@ -78,3 +78,4 @@ colorscheme solarized
 set rtp+=/usr/local/opt/fzf
 
 set mouse=a
+

@@ -1,0 +1,95 @@
+" Plug 'Townk/vim-autoclose'
+" " snippets
+" Plug 'SirVer/ultisnips'
+" Plug 'ncm2/ncm2-ultisnips'
+" Plug 'honza/vim-snippets'
+" Plug 'ncm2/ncm2'
+" Plug 'roxma/nvim-yarp'
+" Plug 'ncm2/ncm2-bufword'
+" Plug 'ncm2/ncm2-path'
+" Plug 'ncm2/ncm2-jedi'
+" Plug 'davidhalter/jedi-vim'
+" Formater
+" Plug 'Chiel92/vim-autoformat'
+" markdown
+" tabular plugin is used to format tables
+" Plug 'godlygeek/tabular'
+" " JSON front matter highlight plugin
+" Plug 'elzr/vim-json'
+" REPL
+" Plug 'Vigemus/iron.nvim'
+" Plug 'wsdjeg/FlyGrep.vim' " grep with <leader>s
+" Plug 'autozimu/LanguageClient-neovim', {
+"     \ 'branch': 'next',
+"     \ 'do': 'bash install.sh',
+"     \ }
+" (Optional) Multi-entry selection UI.
+" Plug 'junegunn/fzf'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'ncm2/ncm2-tmux'
+" Plug 'zchee/deoplete-jedi', { 'for': 'python' }
+" PEP8 pyflakes
+" Plug 'nvie/vim-flake8'
+" Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'zchee/deoplete-jedi', { 'do': ':UpdateRemotePlugins', 'for': 'python'}
+" Plug 'Shougo/denite.nvim'
+
+
+""" NCM2 remaps
+
+""" vim-autoformat
+""noremap <F3> :Autoformat<CR>
+
+""" Greping and finding
+
+""" use ` + s to grep code
+""" nnoremap <leader>s :FlyGrep<cr>
+"""
+""" snippets
+""" " Press enter key to trigger snippet expansion
+""" The parameters are the same as `:help feedkeys()`
+""inoremap <silent> <expr> <CR> ncm2_ultisnips#expand_or("\<CR>", 'n')
+
+""" c-j c-k for moving in snippet
+""let g:UltiSnipsExpandTrigger		= "<Plug>(ultisnips_expand)"
+""let g:UltiSnipsJumpForwardTrigger	= "<c-n>"
+""let g:UltiSnipsJumpBackwardTrigger	= "<c-p>"
+""let g:UltiSnipsRemoveSelectModeMappings = 0
+
+
+""" ale
+" Plug 'dense-analysis/ale'
+
+" let g:ale_python_flake8_executable = '/Users/r/.virtualenvs/nvim/bin/flake8'
+" let g:ale_python_flake8_options = ''
+" let g:ale_python_flake8_use_global = 0
+" let g:ale_python_pycodestyle_executable = '/Users/r/.virtualenvs/nvim/bin/pycodestyle'
+" let g:ale_python_pydocstyle_executable = '/Users/r/.virtualenvs/nvim/bin/pydocstyle'
+" let g:ale_python_mypy_executable = '/Users/r/.virtualenvs/nvim/bin/mypy'
+" let g:ale_python_mypy_ignore_invalid_syntax = 0
+" let g:ale_python_mypy_options = ''
+" let g:ale_python_mypy_use_global = 0
+" let g:ale_python_pylint_executable = 'pylint'
+" let g:ale_python_pylint_options = ''
+" let g:ale_python_pylint_use_global = 0
+
+" let g:ale_python_autopep8_executable = '/Users/r/.virtualenvs/nvim/bin/autopep8'
+
+
+" Ale
+" let g:ale_lint_on_enter = 0
+" let g:ale_lint_on_text_changed = 'never'
+" let g:ale_echo_msg_error_str = 'E'
+" let g:ale_echo_msg_warning_str = 'W'
+" let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+" let g:ale_linters = {'python': ['flake8', 'mypy', 'pylint', 'pycodestyle', 'pydocstyle']}
+" 
+" 
+" let g:ale_fixers = {
+" \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+" \   'python': ['black']
+" \}
+" 
+" " Set this variable to 1 to fix files when you save them.
+" let g:ale_fix_on_save = 1
+

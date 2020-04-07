@@ -1,9 +1,11 @@
-{"python.formatting.provider": "black",
-    "python.pythonPath":"~/dotfiles/pythonenv",
-    "python.jediEnabled": false,
+{
+  "python.formatting.provider": "black",
+  "python.pythonPath": "~/dotfiles/pythonenv",
+  "python.setLinter": "flake8",
+  "python.jediEnabled": false,
   "python.condaPath": "/Users/r/miniconda3/condabin/conda",
   "suggest.noselect": false,
-  "python.venvFolders" : [".venv","envs",".pyenv",".direnv"],
+  "python.venvFolders": [".venv", "envs", ".pyenv", ".direnv"],
   "coc.preferences.formatOnSaveFiletypes": [
     "python",
     "javascript",
@@ -12,6 +14,7 @@
     "json",
     "javascriptreact",
     "typescript.tsx",
-    "graphql"
+    "graphql",
+    "yaml"
   ]
 }
