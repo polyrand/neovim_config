@@ -16,6 +16,9 @@ set gdefault
 set cursorline
 set cc=80
 
+" free cursor
+set virtualedit=all
+
 " undo
 set undofile
 set undodir=~/.nvim/undo
@@ -79,3 +82,5 @@ set rtp+=/usr/local/opt/fzf
 
 set mouse=a
 
+let g:vim_json_syntax_conceal = 0
+let g:vim_markdown_conceal = 0
