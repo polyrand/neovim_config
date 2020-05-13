@@ -5,7 +5,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'tpope/vim-surround'
 Plug 'altercation/vim-colors-solarized'
-Plug 'tmhedberg/simpylfold'
+" Plug 'tmhedberg/simpylfold'
 Plug 'junegunn/vim-easy-align'
 
 " FZF
@@ -26,6 +26,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+Plug 'Glench/Vim-Jinja2-Syntax'
 
 call plug#end()
 

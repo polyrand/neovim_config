@@ -16,8 +16,11 @@ set gdefault
 set cursorline
 set cc=80
 
+
+set guifont=JetBrains_Mono:h13
+
 " free cursor
-set virtualedit=all
+" set virtualedit=all
 
 " undo
 set undofile
@@ -29,7 +32,7 @@ augroup vimrc
     autocmd BufWritePre /tmp/* setlocal noundofile
 augroup END
 
-au BufRead,BufNewFile *.md setlocal textwidth=80
+au BufRead,BufNewFile *.md setlocal textwidth=100
 
 " nmap <S-Enter> o<Esc>
 
@@ -37,11 +40,18 @@ let python_highlight_all=1
 syntax on
 
 " Enable folding
-set foldmethod=marker
-set foldlevel=99
-set foldmarker={{{,}}}
+set foldmethod=manual
+" set foldlevel=99
+" set foldmarker={{{,}}}
 " Enable folding with the spacebar
 " nnoremap <space> za
+" save folds between sessions
+" https://stackoverflow.com/a/54739345
+augroup remember_folds
+  autocmd!
+  au BufWinLeave ?* mkview 1
+  au BufWinEnter ?* silent! loadview 1
+augroup END
 
 
 " set 7 lines to the cursor when moving
