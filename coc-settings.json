@@ -1,20 +1,13 @@
 {
-  "python.formatting.provider": "black",
-  "python.pythonPath": "~/dotfiles/pythonenv",
-  "python.setLinter": "flake8",
-  "python.jediEnabled": false,
-  "python.condaPath": "/Users/r/miniconda3/condabin/conda",
-  "suggest.noselect": false,
-  "python.venvFolders": [".venv", "envs", ".pyenv", ".direnv"],
-  "coc.preferences.formatOnSaveFiletypes": [
-    "python",
-    "javascript",
-    "typescript",
-    "typescriptreact",
-    "json",
-    "javascriptreact",
-    "typescript.tsx",
-    "graphql",
-    "yaml"
-  ]
+    "python.pythonPath": "~/dotfiles/pythonenv",
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "typescript",
+        "typescriptreact",
+        "json",
+        "javascriptreact",
+        "typescript.tsx",
+        "graphql",
+        "yaml"
+    ]
 }

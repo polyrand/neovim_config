@@ -28,7 +28,9 @@ nmap ga <Plug>(EasyAlign)
 
 " FZF remaps
 nnoremap <C-p> :FZF<CR>
-nnoremap <leader>b :call Fzf_dev()<CR>
+" nnoremap <leader>b :call Fzf_dev()<CR>
+nnoremap <leader>b :Black<CR>
+
 " fzf files with , t
 nnoremap <leader>t :Files<CR>
 " rg code with , f

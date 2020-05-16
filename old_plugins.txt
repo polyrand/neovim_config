@@ -93,3 +93,22 @@
 " " Set this variable to 1 to fix files when you save them.
 " let g:ale_fix_on_save = 1
 
+
+" Plug 'tmhedberg/simpylfold'
+" Plug 'Glench/Vim-Jinja2-Syntax'
+
+
+    "python",
+  "python.formatting.provider": "black",
+  "python.setLinter": "flake8",
+
+    "python.jediEnabled": false,
+        "python.condaPath": "/Users/r/miniconda3/condabin/conda",
+    "suggest.noselect": false,
+    "python.venvFolders": [
+        ".venv",
+        "envs",
+        ".pyenv",
+        ".direnv"
+    ],
+

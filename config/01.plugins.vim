@@ -5,7 +5,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'tpope/vim-surround'
 Plug 'altercation/vim-colors-solarized'
-" Plug 'tmhedberg/simpylfold'
 Plug 'junegunn/vim-easy-align'
 
 " FZF
@@ -23,10 +22,15 @@ Plug 'Yggdroot/indentLine'
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" py
+Plug 'vim-python/python-syntax'
+Plug 'ambv/black', { 'for': 'python' }
+Plug 'nvie/vim-flake8', { 'for': 'python' }
+Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'python' }
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'Glench/Vim-Jinja2-Syntax'
 
 call plug#end()
 

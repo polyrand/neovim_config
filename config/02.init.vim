@@ -45,6 +45,7 @@ set foldmethod=manual
 " set foldmarker={{{,}}}
 " Enable folding with the spacebar
 " nnoremap <space> za
+
 " save folds between sessions
 " https://stackoverflow.com/a/54739345
 augroup remember_folds
@@ -52,6 +53,10 @@ augroup remember_folds
   au BufWinLeave ?* mkview 1
   au BufWinEnter ?* silent! loadview 1
 augroup END
+
+" black on save python file
+autocmd BufWritePre *.py execute ':Black'
+nnoremap <F9> :Black<CR>
 
 
 " set 7 lines to the cursor when moving
