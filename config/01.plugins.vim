@@ -24,7 +24,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " py
 Plug 'vim-python/python-syntax'
-Plug 'ambv/black', { 'for': 'python' }
+Plug 'ambv/black', { 'for': 'python', 'branch': 'stable' }
 Plug 'nvie/vim-flake8', { 'for': 'python' }
 Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'python' }
 
