@@ -8,8 +8,10 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'junegunn/vim-easy-align'
 
 " FZF
-Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+" Plug '/usr/local/opt/fzf'
+" Plug 'junegunn/fzf.vim'
 
 " Git integration
 Plug 'tpope/vim-fugitive'
