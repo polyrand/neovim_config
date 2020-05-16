@@ -1,6 +1,12 @@
+" set iskeyword+=-           treat dash separated words as a word text object"
+" set formatoptions-=cro         Stop newline continution of comments
+
+" if !exists('g:vscode')
+
+
 " General
 syntax enable 
-set number
+set number relativenumber
 set incsearch
 set ignorecase
 set smartcase
@@ -15,6 +21,7 @@ set encoding=utf-8
 set gdefault
 set cursorline
 set cc=80
+set lazyredraw
 
 
 set guifont=JetBrains_Mono:h13
@@ -41,6 +48,9 @@ syntax on
 
 " Enable folding
 set foldmethod=manual
+" set foldmethod=indent
+" set foldcolumn=2
+" set foldlevel=4
 " set foldlevel=99
 " set foldmarker={{{,}}}
 " Enable folding with the spacebar
@@ -50,7 +60,8 @@ set foldmethod=manual
 " https://stackoverflow.com/a/54739345
 augroup remember_folds
   autocmd!
-  au BufWinLeave ?* mkview 1
+  au BufWinLeave,BufLeave,BufWritePost ?* nested silent! mkview 1
+  " au BufWinLeave ?* mkview 1
   au BufWinEnter ?* silent! loadview 1
 augroup END
 
@@ -58,14 +69,15 @@ augroup END
 autocmd BufWritePre *.py execute ':Black'
 nnoremap <F9> :Black<CR>
 
-
 " set 7 lines to the cursor when moving
 set so=5
 
 set cmdheight=1
 
 set hid
-
+set splitbelow                          " Horizontal splits will automatically be below
+set splitright                          " Vertical splits will automatically be to the right
+set t_Co=256 
 
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
@@ -83,6 +95,7 @@ set tw=200
 set ai " autoindent
 set si " smart indent
 " set wrap " wrap lines
+set nowrap " Display long lines as just one line
 
 
 set clipboard+=unnamedplus
@@ -96,6 +109,14 @@ colorscheme solarized
 set rtp+=/usr/local/opt/fzf
 
 set mouse=a
-
+set conceallevel=0  " So that I can see `` in markdown files
 let g:vim_json_syntax_conceal = 0
 let g:vim_markdown_conceal = 0
+
+" au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" You can't stop me
+cmap w!! w !sudo tee %
+
+" endif

@@ -1,5 +1,3 @@
-
-
 " use , as leader key
 let mapleader=","
 noremap \ ,
@@ -38,14 +36,6 @@ nnoremap <leader>f :Rg<CR>
 
 " usw w!! to write a 'Read-Only' file if you forget to open with sudo
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
-
-
-" ripgrep
-if executable('rg')
-  let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
-  set grepprg=rg\ --vimgrep
-  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
-endif
 
 " " Files + devicons
 " function! Fzf_dev()

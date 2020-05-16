@@ -9,5 +9,9 @@
         "typescript.tsx",
         "graphql",
         "yaml"
-    ]
+    ],
+    // diagnostic-languageserver
+    "diagnostic-languageserver.filetypes": {
+        "sh": "shellcheck"
+    }
 }
