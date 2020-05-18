@@ -39,6 +39,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'metakirby5/codi.vim'
 
 Plug 'justinmk/vim-sneak'
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 

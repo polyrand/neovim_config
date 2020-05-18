@@ -31,10 +31,11 @@ nnoremap <C-p> :FZF<CR>
 " nnoremap <leader>b :call Fzf_dev()<CR>
 nnoremap <leader>b :Black<CR>
 
-" fzf files with , t
-nnoremap <leader>t :Files<CR>
+
+" fzf files with , f
+nnoremap <leader>f :Files<CR>
 " rg code with , f
-nnoremap <leader>f :Rg<CR>
+nnoremap <leader>g :Rg<CR>
 
 " usw w!! to write a 'Read-Only' file if you forget to open with sudo
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
