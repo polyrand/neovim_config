@@ -33,6 +33,12 @@ Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'python' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+
+Plug 'metakirby5/codi.vim'
+
+Plug 'justinmk/vim-sneak'
 
 call plug#end()
 

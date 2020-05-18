@@ -2,6 +2,8 @@
 let mapleader=","
 noremap \ ,
 
+" apply back with F9
+nnoremap <F9> :Black<CR>
 
 " move between splits with ctrl+ h j k l
 nnoremap <C-J> <C-W><C-J>

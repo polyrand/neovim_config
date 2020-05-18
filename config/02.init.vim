@@ -3,7 +3,6 @@
 
 " if !exists('g:vscode')
 
-
 " General
 syntax enable 
 set number relativenumber
@@ -22,27 +21,15 @@ set gdefault
 set cursorline
 set cc=80
 set lazyredraw
-
-
 set guifont=JetBrains_Mono:h13
 
 " free cursor
 " set virtualedit=all
-
 " undo
 set undofile
 set undodir=~/.nvim/undo
 
-augroup vimrc
-    autocmd!
-    autocmd BufWritePre ~/.ssh/* setlocal noundofile
-    autocmd BufWritePre /tmp/* setlocal noundofile
-augroup END
-
-au BufRead,BufNewFile *.md setlocal textwidth=100
-
 " nmap <S-Enter> o<Esc>
-
 let python_highlight_all=1
 syntax on
 
@@ -56,18 +43,6 @@ set foldmethod=manual
 " Enable folding with the spacebar
 " nnoremap <space> za
 
-" save folds between sessions
-" https://stackoverflow.com/a/54739345
-augroup remember_folds
-  autocmd!
-  au BufWinLeave,BufLeave,BufWritePost ?* nested silent! mkview 1
-  " au BufWinLeave ?* mkview 1
-  au BufWinEnter ?* silent! loadview 1
-augroup END
-
-" black on save python file
-autocmd BufWritePre *.py execute ':Black'
-nnoremap <F9> :Black<CR>
 
 " set 7 lines to the cursor when moving
 set so=5
@@ -96,25 +71,22 @@ set ai " autoindent
 set si " smart indent
 " set wrap " wrap lines
 set nowrap " Display long lines as just one line
-
-
 set clipboard+=unnamedplus
-
 
 " solarized
 set background=dark
 colorscheme solarized
 
 " is this even needed?
-set rtp+=/usr/local/opt/fzf
+" set rtp+=/usr/local/opt/fzf
 
 set mouse=a
 set conceallevel=0  " So that I can see `` in markdown files
 let g:vim_json_syntax_conceal = 0
 let g:vim_markdown_conceal = 0
 
-" au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+" autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " You can't stop me
 cmap w!! w !sudo tee %
