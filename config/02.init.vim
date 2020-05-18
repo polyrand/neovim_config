@@ -69,8 +69,8 @@ set tw=200
 
 set ai " autoindent
 set si " smart indent
-" set wrap " wrap lines
-set nowrap " Display long lines as just one line
+set wrap " wrap lines
+" set nowrap " Display long lines as just one line
 set clipboard+=unnamedplus
 
 " solarized
