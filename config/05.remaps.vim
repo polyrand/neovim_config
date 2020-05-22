@@ -40,6 +40,9 @@ nnoremap <leader>g :Rg<CR>
 " usw w!! to write a 'Read-Only' file if you forget to open with sudo
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
+" Open fff on press of 'f'
+nnoremap <leader>a :F<CR>
+
 " " Files + devicons
 " function! Fzf_dev()
 "   let l:fzf_files_options = '--preview "bat --theme="OneHalfDark" --style=numbers,changes --color always {2..-1} | head -'.&lines.'"'

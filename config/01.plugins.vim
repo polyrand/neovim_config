@@ -41,6 +41,8 @@ Plug 'metakirby5/codi.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'voldikss/vim-floaterm'
 
+Plug 'dylanaraps/fff.vim'
+
 call plug#end()
 
 " plugins end
