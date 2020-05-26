@@ -1,10 +1,11 @@
 " floaterm
 " " Configuration example
-let g:floaterm_keymap_new    = '<F5>'
-let g:floaterm_keymap_toggle = '<F6>'
-let g:floaterm_keymap_prev   = '<F7>'
-let g:floaterm_keymap_next   = '<F8>'
-let g:floaterm_keymap_kill   = '<F10>'
+let g:floaterm_keymap_new    = '<leader>1'
+let g:floaterm_keymap_toggle = '<leader>3'
+let g:floaterm_keymap_prev   = '<leader>2'
+" '<F8>'
+let g:floaterm_keymap_next   = '<leader>4'
+let g:floaterm_keymap_kill   = '<leader>5'
 
 " Floaterm
 let g:floaterm_gitcommit='floaterm'
