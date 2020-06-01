@@ -1,15 +1,33 @@
 " use , as leader key
 let mapleader=","
 noremap \ ,
+map <space> <leader>
+let maplocalleader = ","
 
 " apply back with F9
 nnoremap <F9> :Black<CR>
 
 " move between splits with ctrl+ h j k l
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+" nnoremap <C-J> <C-W><C-J>
+" nnoremap <C-K> <C-W><C-K>
+" nnoremap <C-L> <C-W><C-L>
+" nnoremap <C-H> <C-W><C-H>
+
+" Move visual block selection with <C-[jk]> in visual mode
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
+" Delete all trailing whitespaces
+nmap <silent> <leader>tw :%s/\s\+$//<CR>:let @/=''<CR>``
+" Make the just typed word uppercase
+imap <C-f> <esc>gUiwgi
+" Yank the whole file
+nmap <leader>yf ggyG
+
 " remappings
 nnoremap <C-s> :w<CR>
 
@@ -21,10 +39,9 @@ nnoremap <leader>o :bprevious<CR>
 
 " Alig remaps
 " Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
-
+" xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
+" nmap ga <Plug>(EasyAlign)
 
 " FZF remaps
 nnoremap <C-p> :FZF<CR>

@@ -3,6 +3,7 @@
 
 " if !exists('g:vscode')
 
+set nocompatible
 " General
 syntax enable 
 set number relativenumber
@@ -22,6 +23,9 @@ set cursorline
 set cc=80
 set lazyredraw
 set guifont=JetBrains_Mono:h13
+
+" Allow project-specific vimrc files
+set exrc
 
 " free cursor
 " set virtualedit=all
@@ -62,6 +66,10 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
+
+" Shut up.
+set noerrorbells
+set visualbell
 
 " lineabreak; 200 chars 
 set lbr
