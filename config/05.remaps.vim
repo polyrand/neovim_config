@@ -45,9 +45,13 @@ nnoremap <leader>o :bprevious<CR>
 
 " FZF remaps
 nnoremap <C-p> :FZF<CR>
+nnoremap <silent> <leader>fc :BCommits<CR>
+nnoremap <silent> <leader>fb :Buffers<CR>
+nnoremap <silent> <leader>fr :History<CR>
+nnoremap <silent> <leader>ft :Tags<CR>
+nnoremap <silent> <leader>fi :FZF<CR>
 " nnoremap <leader>b :call Fzf_dev()<CR>
 nnoremap <leader>b :Black<CR>
-
 
 " fzf files with , f
 nnoremap <leader>f :Files<CR>
@@ -60,24 +64,12 @@ cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 " Open fff on press of 'f'
 nnoremap <leader>a :F<CR>
 
-" " Files + devicons
-" function! Fzf_dev()
-"   let l:fzf_files_options = '--preview "bat --theme="OneHalfDark" --style=numbers,changes --color always {2..-1} | head -'.&lines.'"'
-
-"   function! s:files()
-"     let l:files = split(system($FZF_DEFAULT_COMMAND), '\n')
-"     return s:(l:files)
-"   endfunction
-
-"   function! s:edit_file(item)
-"     let l:pos = stridx(a:item, ' ')
-"     let l:file_path = a:item[pos+1:-1]
-"     execute 'silent e' l:file_path
-"   endfunction
-
-"   call fzf#run({
-"         \ 'source': <sid>files(),
-"         \ 'sink':   function('s:edit_file'),
-"         \ 'options': '-m ' . l:fzf_files_options,
-"         \ 'down':    '40%' })
-" endfunction
+" tabs
+nnoremap <leader><S-Tab> :tabp<CR>
+nnoremap <leader><Tab> :tabn<CR>
+" Tab navigation like Firefox.
+nnoremap <C-t>     :tabnew<CR>
+" Alternatively use
+nnoremap th :tabnext<CR>
+nnoremap tl :tabprev<CR>
+nnoremap tn :tabnew<CR>

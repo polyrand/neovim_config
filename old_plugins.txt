@@ -112,3 +112,41 @@
         ".direnv"
     ],
 
+
+" this is not working
+" nnoremap <A-S>1 1gt
+" nnoremap <A-S>2 2gt
+" nnoremap <A-S>3 3gt
+" nnoremap <A-S>4 4gt
+" nnoremap <A-S>5 5gt
+" nnoremap <A-S>6 6gt
+" nnoremap <A-S>7 7gt
+" nnoremap <A-S>8 8gt
+" nnoremap <A-S>9 9gt
+" nnoremap <A-S>0 10gt
+" nnoremap <C-S-tab> :tabprevious<CR>
+" nnoremap <C-tab>   :tabnext<CR>
+" inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+" inoremap <C-tab>   <Esc>:tabnext<CR>i
+" inoremap <C-t>     <Esc>:tabnew<CR>
+" " Files + devicons
+" function! Fzf_dev()
+"   let l:fzf_files_options = '--preview "bat --theme="OneHalfDark" --style=numbers,changes --color always {2..-1} | head -'.&lines.'"'
+
+"   function! s:files()
+"     let l:files = split(system($FZF_DEFAULT_COMMAND), '\n')
+"     return s:(l:files)
+"   endfunction
+
+"   function! s:edit_file(item)
+"     let l:pos = stridx(a:item, ' ')
+"     let l:file_path = a:item[pos+1:-1]
+"     execute 'silent e' l:file_path
+"   endfunction
+
+"   call fzf#run({
+"         \ 'source': <sid>files(),
+"         \ 'sink':   function('s:edit_file'),
+"         \ 'options': '-m ' . l:fzf_files_options,
+"         \ 'down':    '40%' })
+" endfunction
