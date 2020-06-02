@@ -6,7 +6,8 @@
 set nocompatible
 " General
 syntax enable 
-set number relativenumber
+set relativenumber
+set number
 set incsearch
 set ignorecase
 set smartcase
