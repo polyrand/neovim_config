@@ -1,11 +1,9 @@
 " plugins begin
-
 call plug#begin('~/.local/share/nvim/plugged')
-
 
 Plug 'tpope/vim-surround'
 Plug 'altercation/vim-colors-solarized'
-Plug 'junegunn/vim-easy-align'
+" Plug 'junegunn/vim-easy-align'
 
 " FZF
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -14,12 +12,10 @@ Plug 'junegunn/fzf.vim'
 " Plug 'junegunn/fzf.vim'
 
 " Git integration
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'  " comment-out by gc
-
 Plug 'sheerun/vim-polyglot'
-
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -44,5 +40,4 @@ Plug 'voldikss/vim-floaterm'
 Plug 'dylanaraps/fff.vim'
 
 call plug#end()
-
 " plugins end
