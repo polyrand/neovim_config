@@ -28,8 +28,11 @@ imap <C-f> <esc>gUiwgi
 " Yank the whole file
 nmap <leader>yf ggyG
 
-" remappings
+" save with ctrl-s
 nnoremap <C-s> :w<CR>
+
+" close tab with <leader>ct
+nnoremap <leader>tc :tabclose<CR>
 
 " Moverse al buffer siguiente con <líder> + l
 nnoremap <leader>p :bnext<CR>
@@ -73,3 +76,6 @@ nnoremap <C-t>     :tabnew<CR>
 nnoremap th :tabnext<CR>
 nnoremap tl :tabprev<CR>
 nnoremap tn :tabnew<CR>
+
+nnoremap j jzz
+nnoremap k kzz

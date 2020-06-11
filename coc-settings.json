@@ -1,5 +1,22 @@
 {
     "python.pythonPath": "~/dotfiles/pythonenv",
+    "python.jediEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=E501"
+    ],
+    "python.linting.pydocstyleEnabled": true,
+    "python.linting.pydocstyleArgs": [
+        "--ignore=D202,D212"
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports",
+        "--follow-imports=silent",
+        "--show-column-numbers"
+    ],
+    "python.linting.banditEnabled": false, // already in flake8-bandit
+    "python.linting.pylintEnabled": false,
     "coc.preferences.formatOnSaveFiletypes": [
         "javascript",
         "typescript",
