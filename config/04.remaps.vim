@@ -59,7 +59,7 @@ nnoremap <leader>b :Black<CR>
 " fzf files with , f
 nnoremap <leader>f :Files<CR>
 " rg code with , f
-nnoremap <leader>g :Rg<CR>
+nnoremap <leader>g :RG<CR>
 
 " usw w!! to write a 'Read-Only' file if you forget to open with sudo
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
