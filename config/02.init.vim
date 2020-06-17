@@ -15,7 +15,7 @@ set history=500
 filetype plugin on
 filetype indent on
 set autoread
-set hlsearch
+" set hlsearch
 set showmatch
 set fileencoding=utf-8
 set encoding=utf-8
@@ -39,10 +39,10 @@ let python_highlight_all=1
 syntax on
 
 " Enable folding
-set foldmethod=manual
-" set foldmethod=indent
+" set foldmethod=manual
+set foldmethod=indent
 " set foldcolumn=2
-" set foldlevel=4
+set foldlevel=4
 " set foldlevel=99
 " set foldmarker={{{,}}}
 " Enable folding with the spacebar
@@ -52,7 +52,7 @@ set foldmethod=manual
 " set 7 lines to the cursor when moving
 set so=5
 
-set cmdheight=1
+" set cmdheight=1
 
 set hid
 set splitbelow                          " Horizontal splits will automatically be below

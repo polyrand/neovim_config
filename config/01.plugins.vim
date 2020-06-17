@@ -28,8 +28,8 @@ Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'python' }
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
+" Plug 'junegunn/goyo.vim'
+" Plug 'junegunn/limelight.vim'
 
 Plug 'metakirby5/codi.vim'
 Plug 'justinmk/vim-sneak'
@@ -37,7 +37,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'dylanaraps/fff.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 
-Plug 'AndrewRadev/splitjoin.vim' " gS = split a one-liner into multiple lines, gJ = (with the cursor on the first line of a block) to join a block into a single-line statement.
+" Plug 'AndrewRadev/splitjoin.vim' " gS = split a one-liner into multiple lines, gJ = (with the cursor on the first line of a block) to join a block into a single-line statement.
 
 call plug#end()
 " plugins end

@@ -49,7 +49,7 @@ nnoremap <leader>o :bprevious<CR>
 " FZF remaps
 nnoremap <leader>e :FZF<CR>
 " this causes an issue with coc.nvim, I have to fix it.
-" nnoremap <C-p> :FZF<CR>
+nnoremap <C-p> :FZF<CR>
 nnoremap <silent> <leader>fc :BCommits<CR>
 nnoremap <silent> <leader>fb :Buffers<CR>
 nnoremap <silent> <leader>fr :History<CR>
