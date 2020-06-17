@@ -47,7 +47,9 @@ nnoremap <leader>o :bprevious<CR>
 " nmap ga <Plug>(EasyAlign)
 
 " FZF remaps
-nnoremap <C-p> :FZF<CR>
+nnoremap <leader>e :FZF<CR>
+" this causes an issue with coc.nvim, I have to fix it.
+" nnoremap <C-p> :FZF<CR>
 nnoremap <silent> <leader>fc :BCommits<CR>
 nnoremap <silent> <leader>fb :Buffers<CR>
 nnoremap <silent> <leader>fr :History<CR>
@@ -77,5 +79,10 @@ nnoremap th :tabnext<CR>
 nnoremap tl :tabprev<CR>
 nnoremap tn :tabnew<CR>
 
-nnoremap j jzz
-nnoremap k kzz
+" nnoremap j jzz
+" nnoremap k kzz
+
+" python docstrings
+" nnoremap <leader>as 0i>>> $j
+" nnoremap <leader>ac 0i... $j
+" nnoremap <leader>dar

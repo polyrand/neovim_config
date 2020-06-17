@@ -1,4 +1,7 @@
 {
+    // "list.normalMappings": {
+    //     "<C-p>": ":FZF"
+    // },
     "python.pythonPath": "~/dotfiles/pythonenv",
     "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
