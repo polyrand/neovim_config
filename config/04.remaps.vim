@@ -56,7 +56,7 @@ nnoremap <silent> <leader>fr :History<CR>
 nnoremap <silent> <leader>ft :Tags<CR>
 nnoremap <silent> <leader>fi :FZF<CR>
 " nnoremap <leader>b :call Fzf_dev()<CR>
-nnoremap <leader>b :Black<CR>
+nnoremap <leader>b :Buffers<CR>
 
 " fzf files with , f
 nnoremap <leader>f :Files<CR>
@@ -66,7 +66,14 @@ nnoremap <leader>g :RG<CR>
 " usw w!! to write a 'Read-Only' file if you forget to open with sudo
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
-" Open fff on press of 'f'
+command Wd write|bdelete
+
+" resizing
+nnoremap <Leader>+ :vertical resize +5<CR>
+nnoremap <Leader>- :vertical resize -5<CR>
+nnoremap <Leader>rp :vertical resize 100<CR>
+
+" Open fff on press of 'a'
 nnoremap <leader>a :F<CR>
 
 " tabs

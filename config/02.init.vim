@@ -39,29 +39,24 @@ let python_highlight_all=1
 syntax on
 
 " Enable folding
-" set foldmethod=manual
-set foldmethod=indent
+set foldmethod=manual
+" set foldmethod=indent
 " set foldcolumn=2
 set foldlevel=4
 " set foldlevel=99
 " set foldmarker={{{,}}}
 " Enable folding with the spacebar
 " nnoremap <space> za
-
-
+"
 " set 7 lines to the cursor when moving
-set so=5
-
+set so=10
 " set cmdheight=1
-
 set hid
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256 
-
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
-
 set expandtab
 set smarttab
 set shiftwidth=4
@@ -89,6 +84,10 @@ colorscheme solarized
 " is this even needed?
 " set rtp+=/usr/local/opt/fzf
 
+" working directory is always the same as the file you are editing
+" create new buffers in the same folder
+" set autochdir
+
 set mouse=a
 set conceallevel=0  " So that I can see `` in markdown files
 let g:vim_json_syntax_conceal = 0
@@ -98,6 +97,6 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 " autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " You can't stop me
-cmap w!! w !sudo tee %
+" cmap w!! w !sudo tee %
 
 " endif
