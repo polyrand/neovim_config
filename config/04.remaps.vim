@@ -86,6 +86,12 @@ nnoremap th :tabnext<CR>
 nnoremap tl :tabprev<CR>
 nnoremap tn :tabnew<CR>
 
+
+" python folds
+" fold docstrings
+" nnoremap <leader>zzf vifzf
+nnoremap <leader>zzd jv/"""<CR>kzf
+
 " nnoremap j jzz
 " nnoremap k kzz
 
