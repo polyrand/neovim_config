@@ -15,7 +15,7 @@ set history=500
 filetype plugin on
 filetype indent on
 set autoread
-" set hlsearch
+set nohlsearch
 set showmatch
 set fileencoding=utf-8
 set encoding=utf-8
@@ -37,7 +37,7 @@ set undodir=~/.nvim/undo
 " nmap <S-Enter> o<Esc>
 let python_highlight_all=1
 syntax on
-
+set viewoptions-=curdir
 " Enable folding
 set foldmethod=manual
 " set foldmethod=indent
@@ -49,7 +49,7 @@ set foldlevel=4
 " nnoremap <space> za
 "
 " set 7 lines to the cursor when moving
-set so=10
+set so=8
 " set cmdheight=1
 set hid
 set splitbelow                          " Horizontal splits will automatically be below

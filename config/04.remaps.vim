@@ -86,6 +86,8 @@ nnoremap th :tabnext<CR>
 nnoremap tl :tabprev<CR>
 nnoremap tn :tabnew<CR>
 
+nnoremap <leader>su :!sort -u % -o %<CR>
+
 
 " python folds
 " fold docstrings

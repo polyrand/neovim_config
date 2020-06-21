@@ -49,6 +49,8 @@ augroup remember_folds
   au BufWinEnter ?* silent! loadview 1
 augroup END
 
+set viewoptions-=curdir
+
 " black on save python file
 autocmd BufWritePre *.py execute ':Black'
 
