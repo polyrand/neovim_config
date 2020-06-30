@@ -6,7 +6,7 @@
     "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
-        "--ignore=E501"
+        "--ignore=E501,E302"
     ],
     "python.linting.pydocstyleEnabled": true,
     "python.linting.pydocstyleArgs": [

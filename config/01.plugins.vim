@@ -27,13 +27,13 @@ Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'python' }
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Plug 'sillybun/vim-repl'
+"Plug 'sillybun/vim-repl'
 Plug 'metakirby5/codi.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'voldikss/vim-floaterm'
 Plug 'dylanaraps/fff.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-
+Plug 'terryma/vim-multiple-cursors'
 " Plug 'Yggdroot/indentLine'
 " Plug 'junegunn/goyo.vim'
 " Plug 'junegunn/limelight.vim'

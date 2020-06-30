@@ -28,8 +28,17 @@ imap <C-f> <esc>gUiwgi
 " Yank the whole file
 nmap <leader>yf ggyG
 
+" switch between current and last buffer with ctrl-a
+nnoremap <C-a> <C-^>
+
 " save with ctrl-s
 nnoremap <C-s> :w<CR>
+
+" open vertical split with file viewer
+" :vertical resize 50
+nnoremap <leader>of :wincmd v<bar> :Ex <bar><CR> 
+" source viminit
+nnoremap <leader><CR> :source ~/.config/nvim/init.vim<CR>
 
 " close tab with <leader>ct
 nnoremap <leader>tc :tabclose<CR>
@@ -51,6 +60,7 @@ nnoremap <leader>e :FZF<CR>
 " this causes an issue with coc.nvim, I have to fix it.
 nnoremap <C-p> :FZF<CR>
 nnoremap <silent> <leader>fc :BCommits<CR>
+nnoremap <silent> <leader>fg :GFiles<CR>
 nnoremap <silent> <leader>fb :Buffers<CR>
 nnoremap <silent> <leader>fr :History<CR>
 nnoremap <silent> <leader>ft :Tags<CR>
@@ -59,14 +69,14 @@ nnoremap <silent> <leader>fi :FZF<CR>
 nnoremap <leader>b :Buffers<CR>
 
 " fzf files with , f
-nnoremap <leader>f :Files<CR>
+nnoremap <leader>ff :Files<CR>
 " rg code with , f
 nnoremap <leader>g :RG<CR>
 
 " usw w!! to write a 'Read-Only' file if you forget to open with sudo
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
-command Wd write|bdelete
+command! Wd write|bdelete
 
 " resizing
 nnoremap <Leader>+ :vertical resize +5<CR>
