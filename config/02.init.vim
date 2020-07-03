@@ -21,7 +21,7 @@ set fileencoding=utf-8
 set encoding=utf-8
 set gdefault
 set cursorline
-set cc=80
+set cc=90
 set lazyredraw
 set guifont=JetBrains_Mono:h13
 
@@ -67,9 +67,9 @@ set softtabstop=4
 set noerrorbells
 set visualbell
 
-" lineabreak; 200 chars 
+" lineabreak; 90 chars 
 set lbr
-set tw=200
+set tw=90
 
 set ai " autoindent
 set si " smart indent

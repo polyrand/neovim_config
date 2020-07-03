@@ -3,6 +3,10 @@
     //      "<space>": "<leader>"
     //  },
     "python.pythonPath": "~/dotfiles/pythonenv",
+    "python.venvFolders": [
+        ".virtualenvs"
+    ],
+    "python.venvPath": "~/.virtualenvs",
     "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
