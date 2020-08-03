@@ -72,6 +72,7 @@ nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>ff :Files<CR>
 " rg code with , f
 nnoremap <leader>g :RG<CR>
+nnoremap <leader>gg :RG<CR>
 
 " usw w!! to write a 'Read-Only' file if you forget to open with sudo
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
@@ -97,6 +98,14 @@ nnoremap tl :tabprev<CR>
 nnoremap tn :tabnew<CR>
 
 nnoremap <leader>su :!sort -u % -o %<CR>
+
+" Toggle hlsearch
+nmap <silent> <leader>h :set invhlsearch<CR>
+" Greps the current word under the cursor
+nmap <leader>gr :Rg! <C-r><C-w><CR>
+
+" alternative python rename rn is for coc rename
+nmap <silent> <leader>rr :Semshi rename<CR>
 
 
 " python folds

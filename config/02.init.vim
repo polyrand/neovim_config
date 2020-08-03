@@ -15,7 +15,7 @@ set history=500
 filetype plugin on
 filetype indent on
 set autoread
-set nohlsearch
+set hlsearch
 set showmatch
 set fileencoding=utf-8
 set encoding=utf-8
@@ -68,18 +68,25 @@ set noerrorbells
 set visualbell
 
 " lineabreak; 90 chars 
-set lbr
-set tw=90
+" set lbr
+set tw=0
+
+" do not automatically wrap text when typing
+set formatoptions-=t
 
 set ai " autoindent
 set si " smart indent
-set wrap " wrap lines
-" set nowrap " Display long lines as just one line
+" set wrap " wrap lines
+set nowrap " Display long lines as just one line
 set clipboard+=unnamedplus
 
 " solarized
 set background=dark
 colorscheme solarized
+
+" Resize vim windows when resizing the main window
+au VimResized * :wincmd =
+
 
 " is this even needed?
 " set rtp+=/usr/local/opt/fzf

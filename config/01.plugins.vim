@@ -24,6 +24,10 @@ Plug 'vim-python/python-syntax'
 Plug 'ambv/black', { 'for': 'python', 'branch': 'stable' }
 Plug 'nvie/vim-flake8', { 'for': 'python' }
 Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'python' }
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
+" Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+
+Plug 'luochen1990/rainbow'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
