@@ -31,8 +31,9 @@ nmap <leader>yf ggyG
 " switch between current and last buffer with ctrl-a
 nnoremap <C-a> <C-^>
 
-" save with ctrl-s
+" save with ctrl-s and <leader>s
 nnoremap <C-s> :w<CR>
+nnoremap <leader>ss :w<CR>
 
 " open vertical split with file viewer
 " :vertical resize 50
@@ -106,6 +107,10 @@ nmap <leader>gr :Rg! <C-r><C-w><CR>
 
 " alternative python rename rn is for coc rename
 nmap <silent> <leader>rr :Semshi rename<CR>
+
+" generate docstring with PyDocstring
+nnoremap <leader>dss :Pydocstring<CR>
+nnoremap <leader>ds <Plug>(pydocstring)
 
 
 " python folds

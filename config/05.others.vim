@@ -62,6 +62,9 @@ let g:go_term_height = 10
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 
+let g:pydocstring_formatter = 'google'
+
+
 augroup ft_golang
   au!
   au BufEnter,BufNewFile,BufRead *.go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist
