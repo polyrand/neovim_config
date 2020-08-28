@@ -49,7 +49,8 @@ set foldlevel=4
 " nnoremap <space> za
 "
 " set 7 lines to the cursor when moving
-set so=8
+set scrolloff=8
+set sidescrolloff=25
 " set cmdheight=1
 set hid
 set splitbelow                          " Horizontal splits will automatically be below
