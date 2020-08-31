@@ -21,9 +21,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " py
 Plug 'vim-python/python-syntax'
-Plug 'ambv/black', { 'for': 'python', 'branch': 'stable' }
-Plug 'nvie/vim-flake8', { 'for': 'python' }
+" Plug 'ambv/black', { 'branch': 'stable' }
+Plug 'ambv/black', { 'tag': '19.10b0' }
 Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'python' }
+" https://github.com/psf/black/pull/1273#issuecomment-677962301
+" https://github.com/psf/black/issues/1293#issuecomment-621082845
+" https://github.com/psf/black/issues/1293
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 " Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 
