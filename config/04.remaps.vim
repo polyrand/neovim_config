@@ -7,6 +7,15 @@ let maplocalleader = ","
 " apply back with F9
 nnoremap <F9> :Black<CR>
 
+" nnoremap <F5> "=strftime("%d/%b/%Y")<CR>P
+" inoremap <F5> <C-R>=strftime("%d/%b/%Y")<CR>
+
+
+nnoremap <F5> "=system('date "+%d/%b/%Y"')<CR>P
+nnoremap <F6> "=system('date "+%d/%b/%Y" -d "+1 day"')<CR>P
+inoremap <F6> <C-R>=system('date "+%d/%b/%Y"')<CR>
+inoremap <F6> <C-R>=system('date "+%d/%b/%Y" -d "+1 day"')<CR>
+
 " move between splits with ctrl+ h j k l
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
