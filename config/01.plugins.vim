@@ -41,6 +41,10 @@ Plug 'voldikss/vim-floaterm'
 Plug 'dylanaraps/fff.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'terryma/vim-multiple-cursors'
+
+" rust
+Plug 'rust-lang/rust.vim'
+
 " Plug 'Yggdroot/indentLine'
 " Plug 'junegunn/goyo.vim'
 " Plug 'junegunn/limelight.vim'

@@ -54,6 +54,10 @@ set viewoptions-=curdir
 " black on save python file
 autocmd BufWritePre *.py execute ':Black'
 
+" rustfmt on save rust file
+autocmd BufWritePre *.rs execute ':RustFmt'
+
+
 " go: https://github.com/mrnugget/vimconfig/blob/master/vimrc
 " autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 let g:go_term_height = 10
