@@ -1,7 +1,4 @@
 {
-    //  "list.normalMappings": {
-    //      "<space>": "<leader>"
-    //  },
     "python.pythonPath": "~/.pyenv/shims/python",
     "python.venvFolders": [
         "envs",
@@ -10,22 +7,18 @@
         ".virtualenvs"
     ],
     "python.venvPath": "~/.virtualenvs",
+    "python.condaPath": "/Users/r/miniconda3/condabin/conda",
     "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
+    "python.formatting.blackArgs": [
+        "--line-length 120"
+    ],
     "python.linting.flake8Args": [
-        "--ignore=E501,E302"
+        "--ignore=E501,B008,E266"
     ],
     "python.linting.pydocstyleEnabled": true,
-    "python.linting.pydocstyleArgs": [
-        "--ignore=D202,D212,D203"
-    ],
     "python.linting.mypyEnabled": true,
-    "python.linting.mypyArgs": [
-        "--ignore-missing-imports",
-        "--follow-imports=silent",
-        "--show-column-numbers"
-    ],
-    "python.linting.banditEnabled": false, // already in flake8-bandit
+    "python.linting.banditEnabled": false,
     "python.linting.pylintEnabled": false,
     "coc.preferences.formatOnSaveFiletypes": [
         "javascript",
@@ -37,25 +30,7 @@
         "graphql",
         "yaml"
     ],
-    // diagnostic-languageserver
     "diagnostic-languageserver.filetypes": {
         "sh": "shellcheck"
     }
-    //"languageserver": {
-    //    "golang": {
-    //        "command": "gopls",
-    //        "rootPatterns": [
-    //            "go.mod",
-    //            ".vim/",
-    //            ".git/",
-    //            ".hg/"
-    //        ],
-    //        "filetypes": [
-    //            "go"
-    //        ],
-    //        "initializationOptions": {
-    //            "usePlaceholders": true
-    //        }
-    //    }
-    //}
 }

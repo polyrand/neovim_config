@@ -73,7 +73,7 @@ set visualbell
 set tw=0
 
 " do not automatically wrap text when typing
-set formatoptions-=t
+" set formatoptions-=t
 
 set ai " autoindent
 set si " smart indent

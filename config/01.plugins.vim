@@ -34,9 +34,9 @@ Plug 'luochen1990/rainbow'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-"Plug 'sillybun/vim-repl'
-Plug 'metakirby5/codi.vim'
-Plug 'justinmk/vim-sneak'
+" Plug 'sillybun/vim-repl'
+" Plug 'metakirby5/codi.vim'
+" Plug 'justinmk/vim-sneak'
 Plug 'voldikss/vim-floaterm'
 Plug 'dylanaraps/fff.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }

@@ -117,6 +117,9 @@ nmap <leader>gr :Rg! <C-r><C-w><CR>
 " alternative python rename rn is for coc rename
 nmap <silent> <leader>rr :Semshi rename<CR>
 
+" rename visual selection: https://stackoverflow.com/a/676619
+vnoremap <leader>vrn "hy:%s/<C-r>h//gc<left><left><left>
+
 " generate docstring with PyDocstring
 nnoremap <leader>dss :Pydocstring<CR>
 nnoremap <leader>ds <Plug>(pydocstring)

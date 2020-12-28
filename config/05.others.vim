@@ -3,8 +3,8 @@ augroup auto_spellcheck
   autocmd BufNewFile,BufRead *.md setlocal spell
 augroup END
 
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
+" autocmd! User GoyoEnter Limelight
+" autocmd! User GoyoLeave Limelight!
 
 augroup vimrc
     autocmd!
